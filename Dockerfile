@@ -8,7 +8,7 @@ ARG SLIMSERVER_VERSION=7.9.3
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get install -y wget perl libio-socket-ssl-perl locales && \
+    apt-get install -y wget perl libio-socket-ssl-perl locales lame && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /var/cache/apt/archives/*
 
